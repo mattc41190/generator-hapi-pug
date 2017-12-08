@@ -1,0 +1,26 @@
+{
+  "name": "generator-hapi-pug",
+  "version": "0.1.0",
+  "description": "A pug + stylus site generator",
+  "main": "generators/app/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Matthew Cale",
+  "license": "ISC",
+  "dependencies": {
+    "jdenticon": "^1.7.2",
+    "yeoman-generator": "^2.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "yeoman-assert": "^3.1.0",
+    "yeoman-test": "^1.7.0"
+  }
+}

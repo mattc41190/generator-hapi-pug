@@ -1,0 +1,27 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "A personal information page",
+  "main": "server.js",
+  "scripts": {
+    "start": "PORT=80 node server.js",
+    "dev" : "npm run build && node server.js",
+    "build": "npm run compile",
+    "compile-views": "pug src/views/index.pug --out build",
+    "compile-styles": "stylus src/styles/main.styl --compress --out build",
+    "move-images": "cp -r src/images build",
+    "compile": "npm run compile-views && npm run compile-styles && npm run move-images",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^17.1.1",
+    "inert": "^5.0.1"
+  },
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "stylus": "^0.54.5"
+  }
+}

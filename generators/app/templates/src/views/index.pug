@@ -1,0 +1,19 @@
+html
+  head
+    link(href="main.css" rel="stylesheet")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet")
+  body
+    div.container
+      img(src="images/headshot.png", alt="pic-of-me")
+      h1.name <%= name %>
+      p.mission <%= tagLine %>
+      div.links
+        <% if (linkedIn) { %>
+        a(href="<%= linkedIn %>" alt="linkedin") #[i(class="fa fa-linkedin fa-3x" aria-hidden="true")]
+        <% } %>
+        <% if (gitHub) { %>
+        a(href="<%= gitHub %>" alt="github") #[i(class="fa fa-github fa-3x" aria-hidden="true")]
+        <% } %>
+
+        
